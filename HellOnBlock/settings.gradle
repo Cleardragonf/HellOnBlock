@@ -16,4 +16,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'HellOnBlocks-R1.0.0'
+rootProject.name = 'HellOnBlocks'

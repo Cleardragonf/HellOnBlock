@@ -152,20 +152,6 @@ public class ConfigurationManager {
                                 config.getNode("Spawning!", "Zombie");
                                 config.getNode("Spawning!", "Zombie", "Zombie#").setComment("Number of Zombie to attempt").setValue("1");
                                 config.getNode("Spawning!", "Zombie", "Zombie%").setComment("Chances for each Zombie Spawn.  1-100%").setValue("75");
-                                config.getNode("Spawning Bonuses!").setComment("This controls Bonus Mobs Spawning in the Overworld");
-                                config.getNode("Spawning Bonuses!", "Ender Dragon");
-                                config.getNode("Spawning Bonuses!", "Ender Dragon", "Enabled").setComment("If Enabled Ender Dragons May spawn in the OverWorld").setValue("False");   
-                                config.getNode("Spawning Bonuses!", "Ender Dragon", "#").setComment("Number of EnderDragons to attempt to spawn").setValue("1");
-                                config.getNode("Spawning Bonuses!", "Ender Dragon", "%").setComment("The Chance for Each Ender Dragon Being spawned. 1-100").setValue("1");
-                                config.getNode("Spawning Bonuses!", "Ghast");
-                                config.getNode("Spawning Bonuses!", "Ghast", "Enabled").setComment("If Enabled Ender Dragons May spawn in the OverWorld").setValue("False");   
-                                config.getNode("Spawning Bonuses!", "Ghast", "#").setComment("Number of EnderDragons to attempt to spawn").setValue("1");
-                                config.getNode("Spawning Bonuses!", "Ghast", "%").setComment("The Chance for Each Ender Dragon Being spawned. 1-100").setValue("1");
-                                config.getNode("Spawning Bonuses!", "Giant");
-                                config.getNode("Spawning Bonuses!", "Giant", "Enabled").setComment("If Enabled Ender Dragons May spawn in the OverWorld").setValue("False");   
-                                config.getNode("Spawning Bonuses!", "Giant", "#").setComment("Number of EnderDragons to attempt to spawn").setValue("1");
-                                config.getNode("Spawning Bonuses!", "Giant", "%").setComment("The Chance for Each Ender Dragon Being spawned. 1-100").setValue("1");
-                            	                            	
                                 saveConfig();
                         }
                        
