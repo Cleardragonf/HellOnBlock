@@ -2,7 +2,8 @@
     {
         "modid": "hellonblock",
         "name": "HOBs",
-        "version": "Beta 1.0.0",
+        "version": "1.0.0",
+        "description": "This plugin is used to keep things interesting.",
         "requiredMods": [
             "spongeapi@5.1.0-SNAPSHOT"
         ]
