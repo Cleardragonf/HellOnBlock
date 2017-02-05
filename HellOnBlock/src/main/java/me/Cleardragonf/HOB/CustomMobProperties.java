@@ -27,12 +27,10 @@ public class CustomMobProperties {
 
 
 			  if (spawnedEntity.getType().equals(EntityTypes.CREEPER)){
-				  //for(int i = 1700; i <= (Sponge.getGame().getServer().getWorld("world").get().getProperties().getWorldTime()); i++){
-					  Optional<Integer>blast = Optional.of(10);
+					  Optional<Integer>blast = Optional.of(25);
 					  spawnedEntity.offer(Keys.EXPLOSION_RADIUS, blast);
 					  spawnedEntity.offer(Keys.CREEPER_CHARGED, true);
-					  spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred"));
-				  //}
+					  spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred The Almighty!"));
 			  }else{
 			  	return;
 			  }
