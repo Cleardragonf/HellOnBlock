@@ -4,10 +4,13 @@ import org.spongepowered.api.Sponge;
 
 public class DayCounter {
 	
-	  public static int days = 1;
+	  //this right here is used for Keeping track of the days. 1-30
+	  public static int days = ConfigurationManager.getInstance().getTimeTrack().getNode("========Time Tracking========", "Day: ").getInt();
 
+	  //this right here is used for keeping track of the Week 1-5
 	  public static int CustWeek = 1;
 
+	  //this right here is used for keeping track of the config 1-5
 	  public static int config = 1;
 
 	  public void Days(){
@@ -62,7 +65,7 @@ public class DayCounter {
 	  public static int getWeeklyConfig(){
 		  return week;
 	  }
-	  //this isntance is responsible for gettting the correct Days.
+	  //this instance is responsible for getting the correct Days.
 	  public static int getCustDays(){
 		  return days;
 	  }

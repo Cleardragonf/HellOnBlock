@@ -34,6 +34,7 @@ public class ConfigurationManager {
 	private ConfigurationLoader<CommentedConfigurationNode>configLoader3;
 	private ConfigurationLoader<CommentedConfigurationNode>configLoader4;
 	private ConfigurationLoader<CommentedConfigurationNode>configLoader5;
+	private ConfigurationLoader<CommentedConfigurationNode>TimeTrackLoader;
 
 	// the in-memory version of the mail storage file
 	private CommentedConfigurationNode config1;
@@ -41,6 +42,7 @@ public class ConfigurationManager {
 	private CommentedConfigurationNode config3;
 	private CommentedConfigurationNode config4;
 	private CommentedConfigurationNode config5;
+	private CommentedConfigurationNode TimeTracker;
 
 	  
 	  public void enable()
@@ -51,6 +53,7 @@ public class ConfigurationManager {
 	    File Week3 = new File(this.configDir, "Week3.conf");
 	    File Week4 = new File(this.configDir, "Week4.conf");
 	    File Week5 = new File(this.configDir, "Week5.conf");
+	    File TimeTrackerTime = new File(this.configDir, "TimeTracking.conf");
 	    
 	    
 
@@ -59,6 +62,7 @@ public class ConfigurationManager {
 	    this.configLoader3 = HoconConfigurationLoader.builder().setFile(Week3).build();
 	    this.configLoader4 = HoconConfigurationLoader.builder().setFile(Week4).build();
 	    this.configLoader5 = HoconConfigurationLoader.builder().setFile(Week5).build();
+	    this.TimeTrackLoader = HoconConfigurationLoader.builder().setFile(TimeTrackerTime).build();
 	    
 	    
 	    try{
@@ -67,6 +71,19 @@ public class ConfigurationManager {
 	    		this.configDir.mkdirs();
 	    	}
 	    	//create a new one if the file does not exist
+	    	
+	    	if(!TimeTrackerTime.isFile()){
+	    		try{
+	    			TimeTrackerTime.createNewFile();
+	    			loadTime();
+	    			TimeTracker.getNode("========Time Tracking========").setComment("The Point of this config is to keep track of the Time and Date");
+	    			TimeTracker.getNode("========Time Tracking========", "Day: ").setComment("Day number in Game. Between 1-30").setValue(1);
+	    			TimeTracker.getNode("========Time Tracking========", "Time: ").setComment("Set the Time in Game. Between 0 - 24000").setValue("0");
+	    			saveTime();	    		
+	    		}catch(Exception e){
+	    			e.printStackTrace();
+	    		}
+	    	}
 	    	if(!Week1.isFile()){
 	    		try{
 		    		Week1.createNewFile();
@@ -1108,11 +1125,20 @@ config5.getNode("Spawning Bonuses!").setComment("This controls any Mobs you wish
 	    	this.config3 = this.configLoader3.load();
 	    	this.config4 = this.configLoader4.load();
 	    	this.config5 = this.configLoader5.load();
+	    	this.TimeTracker = this.TimeTrackLoader.load();
 	    }catch (IOException e){
 	    	return;
 	    }
 	  }
-	  public void load1(){
+
+	private void loadTime() {
+		try{
+			TimeTracker = TimeTrackLoader.load();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+	public void load1(){
 		  try{
 			  config1 = configLoader1.load();
 		  }catch(IOException e){
@@ -1147,7 +1173,13 @@ config5.getNode("Spawning Bonuses!").setComment("This controls any Mobs you wish
 			  e.printStackTrace();
 		  }
 	  }
-	  
+	  private void saveTime() {
+		  try{
+			  TimeTrackLoader.save(TimeTracker);
+		  }catch(IOException e){
+			  e.printStackTrace();
+		  }
+	  }
 	  public void save1(){
 		  try{
 			  configLoader1.save(config1);
@@ -1198,5 +1230,8 @@ config5.getNode("Spawning Bonuses!").setComment("This controls any Mobs you wish
 	  }
 	  public CommentedConfigurationNode getConfig5(){
 		  return config5;
+	  }
+	  public CommentedConfigurationNode getTimeTrack(){
+		  return TimeTracker;
 	  }
 }

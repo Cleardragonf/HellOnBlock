@@ -14,6 +14,7 @@ import org.spongepowered.api.event.entity.SpawnEntityEvent;
 import org.spongepowered.api.event.filter.cause.First;
 import org.spongepowered.api.event.game.state.GamePreInitializationEvent;
 import org.spongepowered.api.event.game.state.GameStartedServerEvent;
+import org.spongepowered.api.event.game.state.GameStoppingEvent;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.plugin.PluginContainer;
 import org.spongepowered.api.text.Text;
@@ -21,6 +22,7 @@ import org.spongepowered.api.text.Text;
 import com.google.inject.Inject;
 
 import me.Cleardragonf.HOB.Commands.CommandManager;
+import me.Cleardragonf.HOB.Commands.SetDayCommand;
 import me.Cleardragonf.HOB.MobMechanics.CustomMobProperties;
 import me.Cleardragonf.HOB.Spawning.BonusSpawning;
 import me.Cleardragonf.HOB.Spawning.NaturalSpawning;
@@ -75,12 +77,12 @@ public class HOB {
 			  .description(Text.of("Tells the time and day of the month"))
 			  .executor(new CommandManager())
 			  .build();
-	  game.getCommandManager().register(this, TimeCommand, "time");
+	  game.getCommandManager().register(this, TimeCommand, "hobtime");
 	  CommandSpec SetDayCommand = CommandSpec.builder()
 			  .description(Text.of("Set the Date in Minecraft"))
-			  .executor(new CommandManager())
+			  .executor(new SetDayCommand())
 			  .build();
-	  game.getCommandManager().register(this, SetDayCommand, "setday");
+	  game.getCommandManager().register(this, SetDayCommand, "HOB");
 	 
   }
   	  //the below portion of the code calls the methods for This game upon each Entity being spawned
@@ -108,6 +110,12 @@ public class HOB {
 	  public void onEntityDeath(DestructEntityEvent.Death event, @First EntityDamageSource src){
 		  EcoRewards eco = new EcoRewards();
 		  eco.MobDeath(event, src);
+	  }
+	  
+	  @Listener
+	  public void Ending(GameStoppingEvent event){
+		  int days = DayCounter.getCustDays();
+		  ConfigurationManager.getInstance().getTimeTrack().getNode("========Time Tracking========", "Day: ").setValue(days);
 	  }
 	  
   }
