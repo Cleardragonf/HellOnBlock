@@ -29,16 +29,15 @@ public class CustomMobProperties {
 	  	  }
 
 
-	  	  if(DayCounter.getWeeklyConfig() == 1){
 			  if(spawnedEntity.getType().equals(EntityTypes.BAT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "Bat", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "Bat", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
 				  a.heal(spawnedEntity);
 			  }
 			  else if(spawnedEntity.getType().equals(EntityTypes.BLAZE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "BLAZE", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "BLAZE", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -46,7 +45,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.CAVE_SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "CAVE_SPIDER", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "CAVE_SPIDER", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -54,7 +53,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.CHICKEN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "CHICKEN", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "CHICKEN", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -62,7 +61,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "COW", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "COW", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -80,7 +79,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.ENDER_DRAGON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "ENDER_DRAGON", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "ENDER_DRAGON", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -88,7 +87,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "ENDERMAN", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "ENDERMAN", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -96,7 +95,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMITE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "ENDERMITE", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "ENDERMITE", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -104,7 +103,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "GHAST", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -112,7 +111,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "GIANT", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -120,7 +119,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -128,7 +127,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.HORSE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "HORSE", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "HORSE", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -136,7 +135,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "GHAST", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -144,7 +143,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "GIANT", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -152,7 +151,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -160,7 +159,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.IRON_GOLEM)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "IRON_GOLEM", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "IRON_GOLEM", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -168,7 +167,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.MAGMA_CUBE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "MAGMA_CUBE", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "MAGMA_CUBE", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -176,7 +175,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.MUSHROOM_COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "MUSHROOM_COW", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "MUSHROOM_COW", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -184,7 +183,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.OCELOT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "OCELOT", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "OCELOT", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -192,7 +191,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.PIG)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "PIG", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "PIG", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -200,7 +199,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.PIG_ZOMBIE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "PIG_ZOMBIE", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "PIG_ZOMBIE", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -208,7 +207,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.POLAR_BEAR)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "POLAR_BEAR", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "POLAR_BEAR", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -216,7 +215,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.RABBIT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "RABBIT", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "RABBIT", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -224,7 +223,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SHEEP)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SHEEP", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SHEEP", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -232,7 +231,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SHULKER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SHULKER", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SHULKER", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -240,7 +239,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SILVERFISH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SILVERFISH", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SILVERFISH", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -248,7 +247,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SKELETON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SKELETON", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SKELETON", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -256,7 +255,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SLIME)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SLIME", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SLIME", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -264,7 +263,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SNOWMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SNOWMAN", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SNOWMAN", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -272,7 +271,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SPIDER", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SPIDER", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -280,7 +279,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.SQUID)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "SQUID", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "SQUID", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -288,7 +287,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.VILLAGER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "VILLAGER", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "VILLAGER", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -296,7 +295,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.WITCH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "WITCH", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "WITCH", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -304,7 +303,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.WITHER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "WITHER", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "WITHER", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -312,7 +311,7 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if(spawnedEntity.getType().equals(EntityTypes.WOLF)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig1().getNode("Custom Properties", "WOLF", "Angry").getBoolean();
+				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Custom Properties", "WOLF", "Angry").getBoolean();
 				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
@@ -327,1202 +326,4 @@ public class CustomMobProperties {
 			  
 			  
 		  }
-	  	  else if(DayCounter.getWeeklyConfig() == 2){
-			  if(spawnedEntity.getType().equals(EntityTypes.BAT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "Bat", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.BLAZE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "BLAZE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CAVE_SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "CAVE_SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CHICKEN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "CHICKEN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if (spawnedEntity.getType().equals(EntityTypes.CREEPER)){
-				  Optional<Integer>blast = Optional.of(5);
-				  spawnedEntity.offer(Keys.EXPLOSION_RADIUS, blast);
-				  spawnedEntity.offer(Keys.CREEPER_CHARGED, true);
-				  spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred The Almighty!"));
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDER_DRAGON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "ENDER_DRAGON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "ENDERMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMITE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "ENDERMITE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.HORSE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "HORSE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.IRON_GOLEM)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "IRON_GOLEM", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MAGMA_CUBE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "MAGMA_CUBE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MUSHROOM_COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "MUSHROOM_COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.OCELOT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "OCELOT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "PIG", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG_ZOMBIE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "PIG_ZOMBIE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.POLAR_BEAR)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "POLAR_BEAR", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.RABBIT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "RABBIT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHEEP)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SHEEP", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHULKER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SHULKER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SILVERFISH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SILVERFISH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SKELETON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SKELETON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SLIME)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SLIME", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SNOWMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SNOWMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SQUID)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "SQUID", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.VILLAGER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "VILLAGER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITCH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "WITCH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITHER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "WITHER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WOLF)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig2().getNode("Custom Properties", "WOLF", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ZOMBIE)){
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  
-		  }
-	  	  else if(DayCounter.getWeeklyConfig() == 3){
-			  if(spawnedEntity.getType().equals(EntityTypes.BAT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "Bat", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.BLAZE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "BLAZE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CAVE_SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "CAVE_SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CHICKEN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "CHICKEN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if (spawnedEntity.getType().equals(EntityTypes.CREEPER)){
-				  Optional<Integer>blast = Optional.of(5);
-				  spawnedEntity.offer(Keys.EXPLOSION_RADIUS, blast);
-				  spawnedEntity.offer(Keys.CREEPER_CHARGED, true);
-				  spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred The Almighty!"));
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDER_DRAGON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "ENDER_DRAGON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "ENDERMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMITE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "ENDERMITE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.HORSE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "HORSE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.IRON_GOLEM)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "IRON_GOLEM", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MAGMA_CUBE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "MAGMA_CUBE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MUSHROOM_COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "MUSHROOM_COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.OCELOT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "OCELOT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "PIG", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG_ZOMBIE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "PIG_ZOMBIE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.POLAR_BEAR)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "POLAR_BEAR", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.RABBIT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "RABBIT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHEEP)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SHEEP", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHULKER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SHULKER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SILVERFISH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SILVERFISH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SKELETON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SKELETON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SLIME)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SLIME", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SNOWMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SNOWMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SQUID)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "SQUID", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.VILLAGER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "VILLAGER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITCH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "WITCH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITHER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "WITHER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WOLF)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig3().getNode("Custom Properties", "WOLF", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ZOMBIE)){
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  
-		  }
-	  	  else if(DayCounter.getWeeklyConfig() == 4){
-			  if(spawnedEntity.getType().equals(EntityTypes.BAT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "Bat", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.BLAZE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "BLAZE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CAVE_SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "CAVE_SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CHICKEN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "CHICKEN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if (spawnedEntity.getType().equals(EntityTypes.CREEPER)){
-				  Optional<Integer>blast = Optional.of(5);
-				  spawnedEntity.offer(Keys.EXPLOSION_RADIUS, blast);
-				  spawnedEntity.offer(Keys.CREEPER_CHARGED, true);
-				  spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred The Almighty!"));
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDER_DRAGON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "ENDER_DRAGON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "ENDERMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMITE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "ENDERMITE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.HORSE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "HORSE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.IRON_GOLEM)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "IRON_GOLEM", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MAGMA_CUBE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "MAGMA_CUBE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MUSHROOM_COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "MUSHROOM_COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.OCELOT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "OCELOT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "PIG", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG_ZOMBIE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "PIG_ZOMBIE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.POLAR_BEAR)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "POLAR_BEAR", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.RABBIT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "RABBIT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHEEP)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SHEEP", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHULKER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SHULKER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SILVERFISH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SILVERFISH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SKELETON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SKELETON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SLIME)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SLIME", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SNOWMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SNOWMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SQUID)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "SQUID", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.VILLAGER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "VILLAGER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITCH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "WITCH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITHER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "WITHER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WOLF)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig4().getNode("Custom Properties", "WOLF", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ZOMBIE)){
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  
-		  }
-	  	  else if(DayCounter.getWeeklyConfig() == 5){
-			  if(spawnedEntity.getType().equals(EntityTypes.BAT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "Bat", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.BLAZE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "BLAZE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CAVE_SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "CAVE_SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.CHICKEN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "CHICKEN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if (spawnedEntity.getType().equals(EntityTypes.CREEPER)){
-				  Optional<Integer>blast = Optional.of(5);
-				  spawnedEntity.offer(Keys.EXPLOSION_RADIUS, blast);
-				  spawnedEntity.offer(Keys.CREEPER_CHARGED, true);
-				  spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred The Almighty!"));
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDER_DRAGON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "ENDER_DRAGON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "ENDERMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ENDERMITE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "ENDERMITE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.HORSE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "HORSE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "GHAST", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "GIANT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.GUARDIAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "GUARDIAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.IRON_GOLEM)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "IRON_GOLEM", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MAGMA_CUBE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "MAGMA_CUBE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.MUSHROOM_COW)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "MUSHROOM_COW", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.OCELOT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "OCELOT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "PIG", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.PIG_ZOMBIE)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "PIG_ZOMBIE", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.POLAR_BEAR)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "POLAR_BEAR", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.RABBIT)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "RABBIT", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHEEP)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SHEEP", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SHULKER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SHULKER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SILVERFISH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SILVERFISH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SKELETON)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SKELETON", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SLIME)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SLIME", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SNOWMAN)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SNOWMAN", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SPIDER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SPIDER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.SQUID)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "SQUID", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.VILLAGER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "VILLAGER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITCH)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "WITCH", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WITHER)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "WITHER", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.WOLF)){
-				  Boolean AngryValue = ConfigurationManager.getInstance().getConfig5().getNode("Custom Properties", "WOLF", "Angry").getBoolean();
-				  spawnedEntity.offer(Keys.ANGRY, AngryValue);
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  else if(spawnedEntity.getType().equals(EntityTypes.ZOMBIE)){
-				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
-				  CustomHealth a = new CustomHealth();
-				  a.heal(spawnedEntity);
-			  }
-			  
-			  
-		  }
-	  }
-	  
 }

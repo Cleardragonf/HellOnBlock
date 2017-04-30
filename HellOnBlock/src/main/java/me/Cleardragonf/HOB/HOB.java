@@ -10,6 +10,7 @@ import org.spongepowered.api.config.ConfigDir;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.entity.SpawnEntityEvent;
+import org.spongepowered.api.event.game.GameReloadEvent;
 import org.spongepowered.api.event.game.state.GamePreInitializationEvent;
 import org.spongepowered.api.event.game.state.GameStartedServerEvent;
 import org.spongepowered.api.event.game.state.GameStoppingServerEvent;
@@ -85,13 +86,9 @@ public class HOB {
       //the below portion of the code calls the methods for This game upon each Entity being spawned
       @Listener
       public void entityData(SpawnEntityEvent event){
-          //NaturalSpawning spawn1 = new NaturalSpawning();
-          //BonusSpawning spawn2 = new BonusSpawning();
           CustomMobProperties spawn3 = new CustomMobProperties();
           DayCounter labelTest = new DayCounter();  
- 
-          //spawn1.onEntitySpawn(event);
-          //spawn2.checkEntitySpawn(event);
+
           spawn3.entityData(event);
           labelTest.Days();
       }
@@ -99,6 +96,7 @@ public class HOB {
       //========Game Schedulers ========
       @Listener
       public void daytracker3(GameStartedServerEvent event){
+    	  
           Sponge.getScheduler().createTaskBuilder().execute(task -> {
               DayCounter getStarted = new DayCounter();
               getStarted.Days();
@@ -114,16 +112,21 @@ public class HOB {
                       SpawnTesting spawnTest = new SpawnTesting();
                       spawnTest.getSpace(player2);
                   }
-              }).intervalTicks(460).submit(this);    
-              //}).intervalTicks((ConfigurationManager.getInstance().getConfig1().getNode("========General Week Properties========", "Time Between Waves", "Time").getLong())).submit(this);
-              //this protion controlls the time between waves //MAKE CONGIF.
+              }).intervalTicks((ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("========General Week Properties========", "Time Between Waves", "Time").getLong())).submit(this);
       }
- 		
+      
+      @Listener
+      public void reloading(GameReloadEvent event){
+          ConfigurationManager.getInstance().enable();
+          ConfigurationManager.getInstance().notifyAll();
+          Sponge.getServer().getBroadcastChannel().send(Text.of("HOB's Has Reloaded Successfully!!!"));
+      }
        
       @Listener
       public void Ending(GameStoppingServerEvent event){
           int days = DayCounter.getCustDays();
           ConfigurationManager.getInstance().getTimeTrack().getNode("========Time Tracking========", "Day: ").setValue(days);
+          ConfigurationManager.getInstance().saveTime();
       }
        
   }

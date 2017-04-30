@@ -48,6 +48,7 @@ public class SpawnTesting {
             		final Double optional = Vector1.getProperty(GroundLuminanceProperty.class).get().getValue();
             		if(optional < 5){
                 		TimeToTry.newCreeper(Vector1);
+                		//Sponge.getServer().getBroadcastChannel().send(Text.of("Vector 1 is performing"));
             		}else{
                 		return;
             		}
@@ -58,6 +59,8 @@ public class SpawnTesting {
             		final Double optional = Vector2.getProperty(GroundLuminanceProperty.class).get().getValue();
             		if(optional < 5){
                 		TimeToTry.newCreeper(Vector2);
+                		//Sponge.getServer().getBroadcastChannel().send(Text.of("Vector 2 is performing"));
+
             		}else{
                 		return;
             		}
@@ -68,6 +71,8 @@ public class SpawnTesting {
             		final Double optional = Vector3.getProperty(GroundLuminanceProperty.class).get().getValue();
             		if(optional < 5){
                 		TimeToTry.newCreeper(Vector3);
+                		//Sponge.getServer().getBroadcastChannel().send(Text.of("Vector 3 is performing"));
+
             		}else{
                 		return;
             		}
@@ -78,6 +83,8 @@ public class SpawnTesting {
             		final Double optional = Vector4.getProperty(GroundLuminanceProperty.class).get().getValue();
             		if(optional < 5){
                 		TimeToTry.newCreeper(Vector4);
+                		//Sponge.getServer().getBroadcastChannel().send(Text.of("Vector 4 is performing"));
+
             		}else{
                 		return;
             		}

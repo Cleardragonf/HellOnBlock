@@ -15,6 +15,7 @@ public class SetDayCommand implements CommandExecutor{
 	public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
 		if(!(src instanceof Player)){
 			src.sendMessage(Text.of(TextColors.BLUE, "Testing"));
+			
 		}
 		return CommandResult.success();
 	}

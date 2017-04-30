@@ -30,6 +30,8 @@ public class ConfigurationManager {
 
 
 	// The config Manager for the mail storage file
+	
+	
 	private ConfigurationLoader<CommentedConfigurationNode>configLoader1;
 	private ConfigurationLoader<CommentedConfigurationNode>configLoader2;
 	private ConfigurationLoader<CommentedConfigurationNode>configLoader3;
@@ -614,7 +616,11 @@ public class ConfigurationManager {
                     config2.getNode("Custom Properties!", "Zombie", "Health", "Total").setComment("Total Amount of HP for a Zombie. Default ??").setValue("10");
                     config2.getNode("Custom Properties!", "Zombie", "Attack", "Enabled").setComment("Enable Custom Zombie Damage?").setValue("False");
                     config2.getNode("Custom Properties!", "Zombie", "Attack", "Total").setComment("Total Amount of Damage for a Zombie. Default ??").setValue("2");     
-                    
+                    //
+                    config2.getNode("========General Week Properties========").setComment("The Below is used for Week 1's General Configuration");
+                    config2.getNode("========General Week Properties========", "Time Between Waves");
+                    config2.getNode("========General Week Properties========", "Time Between Waves", "Time").setComment("In Ticks(20ticks per second)").setValue("460");
+
                     save2();
 	    		}catch(Exception e){
 	    			e.printStackTrace();
@@ -880,7 +886,11 @@ public class ConfigurationManager {
                     config3.getNode("Custom Properties!", "Zombie", "Health", "Total").setComment("Total Amount of HP for a Zombie. Default ??").setValue("10");
                     config3.getNode("Custom Properties!", "Zombie", "Attack", "Enabled").setComment("Enable Custom Zombie Damage?").setValue("False");
                     config3.getNode("Custom Properties!", "Zombie", "Attack", "Total").setComment("Total Amount of Damage for a Zombie. Default ??").setValue("2");     
-                    
+                    //
+                    config3.getNode("========General Week Properties========").setComment("The Below is used for Week 1's General Configuration");
+                    config3.getNode("========General Week Properties========", "Time Between Waves");
+                    config3.getNode("========General Week Properties========", "Time Between Waves", "Time").setComment("In Ticks(20ticks per second)").setValue("460");
+
                                                     
 		    		save3();
 	    		}catch(Exception e){
@@ -1147,7 +1157,11 @@ public class ConfigurationManager {
                     config4.getNode("Custom Properties!", "Zombie", "Health", "Total").setComment("Total Amount of HP for a Zombie. Default ??").setValue("10");
                     config4.getNode("Custom Properties!", "Zombie", "Attack", "Enabled").setComment("Enable Custom Zombie Damage?").setValue("False");
                     config4.getNode("Custom Properties!", "Zombie", "Attack", "Total").setComment("Total Amount of Damage for a Zombie. Default ??").setValue("2");     
-                    
+                    //
+                    config4.getNode("========General Week Properties========").setComment("The Below is used for Week 1's General Configuration");
+                    config4.getNode("========General Week Properties========", "Time Between Waves");
+                    config4.getNode("========General Week Properties========", "Time Between Waves", "Time").setComment("In Ticks(20ticks per second)").setValue("460");
+
                                                     
 		    		save4();
 	    		}catch(Exception e){
@@ -1414,7 +1428,11 @@ config5.getNode("Spawning Bonuses!").setComment("This controls any Mobs you wish
                     config5.getNode("Custom Properties!", "Zombie", "Health", "Total").setComment("Total Amount of HP for a Zombie. Default ??").setValue("10");
                     config5.getNode("Custom Properties!", "Zombie", "Attack", "Enabled").setComment("Enable Custom Zombie Damage?").setValue("False");
                     config5.getNode("Custom Properties!", "Zombie", "Attack", "Total").setComment("Total Amount of Damage for a Zombie. Default ??").setValue("2");     
-                    
+                    //
+                    config5.getNode("========General Week Properties========").setComment("The Below is used for Week 1's General Configuration");
+                    config5.getNode("========General Week Properties========", "Time Between Waves");
+                    config5.getNode("========General Week Properties========", "Time Between Waves", "Time").setComment("In Ticks(20ticks per second)").setValue("460");
+
                                                     
 		    		save5();
 	    		}catch(Exception e){
@@ -1475,7 +1493,7 @@ config5.getNode("Spawning Bonuses!").setComment("This controls any Mobs you wish
 			  e.printStackTrace();
 		  }
 	  } 
-	  private void saveTime() {
+	  public void saveTime() {
 		  try{
 			  TimeTrackLoader.save(TimeTracker);
 		  }catch(IOException e){
@@ -1516,22 +1534,63 @@ config5.getNode("Spawning Bonuses!").setComment("This controls any Mobs you wish
 		  }catch(IOException e){
 			  e.printStackTrace();
 		  }
+	  }	  
+	  
+	  public void loadConfig(int index){
+		  if(index == 1){
+			  try {
+				config1 = configLoader1.load();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		  }
+		  if(index == 2){
+			  try {
+				config2 = configLoader2.load();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		  }
+		  if(index == 3){
+			  try {
+				config3 = configLoader3.load();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		  }
+		  if(index == 4){
+			  try {
+				config4 = configLoader4.load();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		  }
+		  if(index == 5){
+			  try {
+				config5 = configLoader5.load();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		  }
 	  }
 	  
-	  public CommentedConfigurationNode getConfig1(){
+	  public CommentedConfigurationNode getConfig(int index){
+		  if(index == 1){
+			  return config1;
+		  }
+		  if(index == 2){
+			  return config2;
+		  }
+		  if(index == 3){
+			  return config3;
+		  }
+		  if(index == 4){
+			  return config4;
+		  }
+		  if(index == 5){
+			  return config5;
+		  }
 		  return config1;
-	  }
-	  public CommentedConfigurationNode getConfig2(){
-		  return config2;
-	  }
-	  public CommentedConfigurationNode getConfig3(){
-		  return config3;
-	  }
-	  public CommentedConfigurationNode getConfig4(){
-		  return config4;
-	  }
-	  public CommentedConfigurationNode getConfig5(){
-		  return config5;
 	  }
 	  public CommentedConfigurationNode getTimeTrack(){
 		  return TimeTracker;

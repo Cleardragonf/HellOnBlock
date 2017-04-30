@@ -55,9 +55,264 @@ public class NaturalSpawning {
 			public String Config = "Config" + test;
 			
 	 		public void Hostiles(Location<World> spawnLocation) {
+	 			List<String> list = Arrays.asList("BLAZE","CAVE_SPIDER","CREEPER","ENDER_CRYSTAL","ENDER_DRAGON","ENDERMAN","GHAST","GIANT",
+	 					"MAGMA_CUBE","PIG_ZOMBIE","SILVERFISH","SKELETON","SLIME","SPIDER","WITCH","WITHER","ZOMBIE","NONE");
+	 			Random rand = new Random();
+	 			String listResult = list.get(rand.nextInt(list.size()));
+	 			
+	 			if(listResult == "BLAZE"){
+	 				
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Blaze", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Blaze", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.BLAZE, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("BLAZE"));
+			  			  }
+			  		  }
+
+	 			}
+	 			if(listResult == "CAVE_SPIDER"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "CaveSpider", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "CaveSpider", "%").getInt())){	 				
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.CAVE_SPIDER, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("CAVE_SPIDER"));
+			  			  }
+			  		  }
+
+	 			}
+	 			if(listResult == "CREEPER"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Creeper", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Creeper", "%").getInt())){	 				
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.CREEPER, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("CREEPER"));
+			  			  }
+			  		  }
+
+	 			}
+	 			if(listResult == "ENDER_DRAGON"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "EnderDragon", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "EnderDragon", "%").getInt())){	 				
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.ENDER_DRAGON, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("ENDER_DRAGON"));
+			  			  }
+			  		  }
+
+	 			}
+	 			if(listResult == "ENDERMAN"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Enderman", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Enderman", "%").getInt())){
+		 			Extent extent = spawnLocation.getExtent();
+		 		    Entity entity = extent.createEntity(EntityTypes.ENDERMAN, spawnLocation.getPosition());
+		 		        Entity creeper = entity;
+		 		        extent.spawnEntity(creeper,
+		 		            Cause.source(EntitySpawnCause.builder()
+		 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+		 				//Sponge.getServer().getBroadcastChannel().send(Text.of("ENDERMAN"));
+			  			  }
+			  		  }
+
+	 			}
+	 			if(listResult == "GHAST"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Ghast", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Ghast", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.GHAST, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("GHAST"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "GIANT"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Giant", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Giant", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.GIANT, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("GIANT"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "MAGMA_CUBE"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "MagmaCube", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "MagmaCube", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.MAGMA_CUBE, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("MAGMA_CUBE"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "PIG_ZOMBIE"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "PigZombie", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "PigZombie", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.PIG_ZOMBIE, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("PIG_ZOMBIE"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "SILVERFISH"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "SilverFish", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "SilverFish", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.SILVERFISH, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("SILVERFISH"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "SKELETON"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Skeleton", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Skeleton", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.SKELETON, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("SKELETON"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "SLIME"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Slime", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Slime", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.SLIME, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("SLIME"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "SPIDER"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Spider", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Spider", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.SPIDER, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("SPIDER"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "WITCH"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Witch", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Witch", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.WITCH, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("WITCH"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "WITHER"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Wither", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Wither", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.WITHER, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("WITHER"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "ZOMBIE"){
+			  		  for (int i = 0; i< (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Zombie", "#").getInt()); i++){
+			  			  Random roll = new Random();
+			  			  int answer = roll.nextInt(100) + 1;
+			  			  if (answer <= (ConfigurationManager.getInstance().getConfig(DayCounter.getWeeklyConfig()).getNode("Natural Spawning!", "Zombie", "%").getInt())){
+				 			Extent extent = spawnLocation.getExtent();
+				 		    Entity entity = extent.createEntity(EntityTypes.ZOMBIE, spawnLocation.getPosition());
+				 		        Entity creeper = entity;
+				 		        extent.spawnEntity(creeper,
+				 		            Cause.source(EntitySpawnCause.builder()
+				 		            .entity(creeper).type(SpawnTypes.PLUGIN).build()).build());
+				 				//Sponge.getServer().getBroadcastChannel().send(Text.of("ZOMBIE"));
+			  			  }
+			  		  }
+	 			}
+	 			if(listResult == "NONE"){
+	 				//Sponge.getServer().getBroadcastChannel().send(Text.of("Nope nothing here"));
+	 			}
+	 		}
 	 			
 	 			//SAVE THE BELOW IT WORKS....WORKING ON THE ABOVE TO CUT OUT CODE
-	 			if(DayCounter.getWeeklyConfig() == 1 ){
+	 			/*if(DayCounter.getWeeklyConfig() == 1 ){
 	 			List<String> list = Arrays.asList("BLAZE","CAVE_SPIDER","CREEPER","ENDER_CRYSTAL","ENDER_DRAGON","ENDERMAN","GHAST","GIANT",
 	 					"MAGMA_CUBE","PIG_ZOMBIE","SILVERFISH","SKELETON","SLIME","SPIDER","WITCH","WITHER","ZOMBIE","NONE","NONE","NONE");
 	 			Random rand = new Random();
@@ -1329,7 +1584,7 @@ public class NaturalSpawning {
 	 			}
  			}	
 
- 		}
+ 		}*/
 			  public String getVariableConfig1(){
  				  return Config;
  			  }
