@@ -1,13 +1,10 @@
 package me.Cleardragonf.HOB.MobMechanics;
 
-import java.util.Optional;
-
 import org.spongepowered.api.data.key.Keys;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.EntityTypes;
 import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.entity.SpawnEntityEvent;
-import org.spongepowered.api.text.Text;
 
 import me.Cleardragonf.HOB.ConfigurationManager;
 import me.Cleardragonf.HOB.DayCounter;
@@ -69,10 +66,10 @@ public class CustomMobProperties {
 			  }
 			  
 			  else if (spawnedEntity.getType().equals(EntityTypes.CREEPER)){
-				  Optional<Integer>blast = Optional.of(5);
-				  spawnedEntity.offer(Keys.EXPLOSION_RADIUS, blast);
-				  spawnedEntity.offer(Keys.CREEPER_CHARGED, true);
-				  spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred The Almighty!"));
+				  //Optional<Integer>blast = Optional.of(5);
+				  //spawnedEntity.offer(Keys.EXPLOSION_RADIUS, blast);
+				  //spawnedEntity.offer(Keys.CREEPER_CHARGED, true);
+				  //spawnedEntity.offer(Keys.DISPLAY_NAME, Text.of("Fred The Almighty!"));
 				  spawnedEntity.offer(Keys.MAX_HEALTH, (double)45);
 				  CustomHealth a = new CustomHealth();
 				  a.heal(spawnedEntity);

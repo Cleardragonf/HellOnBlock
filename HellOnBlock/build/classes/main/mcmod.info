@@ -3,8 +3,11 @@
         "modid": "hellonblock",
         "name": "HOBs",
         "version": "Beta 1.0.0",
+        "dependencies": [
+            "spongeapi@7.0.0-SNAPSHOT"
+        ],
         "requiredMods": [
-            "spongeapi@5.1.0-SNAPSHOT"
+            "spongeapi@7.0.0-SNAPSHOT"
         ]
     }
 ]

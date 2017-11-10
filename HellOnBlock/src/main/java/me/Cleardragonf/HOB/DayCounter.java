@@ -21,6 +21,8 @@ public class DayCounter {
 		  			  if(24000 >= currentTime){
 		  	  			  DayCounter.days = DayCounter.days + 1;
 		  				  Sponge.getGame().getServer().getDefaultWorld().get().setWorldTime(0);
+		  		          ConfigurationManager.getInstance().getTimeTrack().getNode("========Time Tracking========", "Day: ").setValue(days);		  				  
+		  				  ConfigurationManager.getInstance().saveTime();
 		  				  if(7 >= DayCounter.days){
 		  					  DayCounter.week = 1;
 		  				  }

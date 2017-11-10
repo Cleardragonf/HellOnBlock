@@ -18,10 +18,7 @@ public class BonusSpawning {
 	  	  }
 	  	  if(spawnedEntity == null){
 	  		  return;
-	  	  }
-	  	  if(spawnedEntity.getType().equals(EntityTypes.ENDER_DRAGON)){
-	  		  return;
-	  	  }  		 
+	  	  }	 
 	  	  else if(spawnedEntity.getType().equals(EntityTypes.GHAST)){
 	  		  return;
 	  	  }
@@ -38,9 +35,6 @@ public class BonusSpawning {
 	  		  return;
 	  	  }
 	  	  else if(spawnedEntity.getType().equals(EntityTypes.UNKNOWN)){
-	  		  return;
-	  	  }
-	  	  else if(spawnedEntity.getType().equals(EntityTypes.GIANT)){
 	  		  return;
 	  	  }
 	  	  else if(spawnedEntity.getType().equals(EntityTypes.TIPPED_ARROW)){
